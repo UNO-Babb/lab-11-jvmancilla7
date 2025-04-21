@@ -1,30 +1,17 @@
-I ran a grocery store simulation using shoppers with 10–40 items and tested how changing the number of checkers affected the results.
+I ran a grocery store simulation with shoppers buying 10–40 items and tested different numbers of checkers.
 
-With 3 checkers:
-- The average wait time was 3.36 minutes
-- The total idle time was 274 minutes
+- 3 checkers: 3.36 min wait, 274 min idle  
+- 4 checkers: 2.96 min wait, 474 min idle  
+- 5 checkers: 2.94 min wait, 656 min idle  
+- 6 checkers: 2.90 min wait, 842 min idle  
 
-With 4 checkers:
-- The average wait time was 2.96 minutes
-- The total idle time was 474 minutes
+Adding more checkers reduced wait time, but only slightly after 4. Idle time increased, making extra checkers less efficient.
 
-With 5 checkers:
-- The average wait time was 2.94 minutes
-- The total idle time was 656 minutes
+I also tested shoppers with more items (10–50 up to 10–100). As item count increased, wait times got longer (up to 5.91 min), and checkers stayed busier.
 
-With 6 checkers:
-- The average wait time was 2.90 minutes
-- The total idle time was 842 minutes
-
-I observed that increasing the number of checkers helped reduce the average wait time, but the improvement became smaller with each additional checker. At the same time, the total idle time increased, meaning checkers were spending more time not working. This showed that after a certain point, adding more checkers becomes less efficient.
-
-I also tested how increasing the number of items per shopper affected the results. I ran simulations with item ranges from 10–50 up to 10–100.
-
-As the number of items increased, the average wait time also increased:
 - With 10–50 items, the wait time was 3.49 minutes
-- With 10–70 items, it rose to 4.62 minutes
+- With 10–70 items, the wait time was 4.62 minutes
 - With 10–100 items, the wait time reached 5.91 minutes
 
-At the same time, idle time for checkers slightly decreased because shoppers were taking longer to shop and check out, keeping checkers busier.
+In summary, the best setup is to balances wait time and idle time. Too few checkers cause delays, but too many increase idle time without much benefit.
 
-From these tests, I learned that the best setup balances wait time and idle time. Too many checkers lead to high idle time, while too few lead to long waits. Also, when shoppers have more items, it’s important to either reduce arrival time or increase the number of checkers to keep the system efficient.
